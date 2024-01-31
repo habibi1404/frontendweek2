@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tables</title>
+
+    <style>
+        table{
+            width: 80%;
+            margin: auto;
+        }
+
+        td,th{
+            padding: 1em;
+        }
+        tfoot td{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <table border="4">
+        <caption>Study Schedule</caption>
+        <thead>
+            <tr>
+                <th scope="col">days</th>
+                <th scope="col">morning</th>
+                <th scope="col">evening</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">monday</th>
+                <td rowspan="2">html</td>
+                <td rowspan="2">css</td>
+            </tr>
+            <tr>
+                <th scope="row">tuesday</th>
+            </tr>
+            <tr>
+                <th scope="row">wednesday</th>
+                <td>css</td>
+                <td>html</td>
+            </tr>
+            <tr>
+                <th scope="row">thursday</th>
+                <td rowspan="2">html</td>
+                <td>css</td>
+            </tr>
+            <tr>
+                <th scope="row">friday</th>
+                <td>html</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="3">change every 2 weeks</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
